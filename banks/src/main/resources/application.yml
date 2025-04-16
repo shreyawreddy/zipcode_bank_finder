@@ -1,0 +1,6 @@
+server:
+  port: 8080
+
+maps:
+  service:
+    url: http://localhost:8081/maps/banksIn10Miles

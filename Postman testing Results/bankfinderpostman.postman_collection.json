@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "c3a3c1db-0ea5-4796-9066-7ce0dc942976",
+		"name": "bankfinderpostman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44123959",
+		"_collection_link": "https://shreya-2358781.postman.co/workspace/Shreya's-Workspace~d90d5f7a-f29b-42d7-895c-faf94609a129/collection/44123959-c3a3c1db-0ea5-4796-9066-7ce0dc942976?action=share&source=collection_link&creator=44123959"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/maps/nearby-banks?zipcode=98390",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "xxxxxxx",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/maps/nearby-banks?zipcode=98390",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"maps",
+						"nearby-banks"
+					],
+					"query": [
+						{
+							"key": "zipcode",
+							"value": "98390"
+						}
+					]
+				},
+				"description": "postman testing"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/banks/nearby?zipcode=60601",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/banks/nearby?zipcode=60601",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"banks",
+						"nearby"
+					],
+					"query": [
+						{
+							"key": "zipcode",
+							"value": "60601"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
